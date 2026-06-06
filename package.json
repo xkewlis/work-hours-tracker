@@ -14,11 +14,16 @@
     "@iconify-json/lucide": "^1.2.111",
     "@iconify-json/simple-icons": "^1.2.84",
     "@nuxt/ui": "^4.8.1",
+    "@types/node": "^25.9.2",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.12.23",
+    "mysql2": "^3.22.4",
     "nuxt": "^4.4.6",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
+    "drizzle-kit": "^0.31.10",
     "eslint": "^10.4.1",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.3"
