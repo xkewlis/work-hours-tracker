@@ -2,20 +2,16 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxtjs/i18n',
+    'nuxt-vuefire'
   ],
 
   devtools: {
-    enabled: true
+    enabled: false
   },
 
   css: ['~/assets/css/main.css'],
-
-  routeRules: {
-    '/': { prerender: true }
-  },
-
-  compatibilityDate: '2025-01-15',
 
   runtimeConfig: {
     dbHost: process.env.DB_HOST,
@@ -25,12 +21,38 @@ export default defineNuxtConfig({
     dbName: process.env.DB_NAME
   },
 
+  compatibilityDate: '2025-01-15',
+
   eslint: {
     config: {
       stylistic: {
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  i18n: {
+    locales: [
+      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' }
+    ],
+    defaultLocale: 'es',
+    strategy: 'no_prefix'
+  },
+
+  vuefire: {
+    auth: {
+      enabled: true,
+      sessionCookie: false
+    },
+    config: {
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.FIREBASE_APP_ID
     }
   }
 })

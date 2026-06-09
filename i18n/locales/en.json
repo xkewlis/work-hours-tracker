@@ -1,0 +1,29 @@
+{
+  "app": {
+    "title": "Work Hours",
+    "description": "Manage and track your work hours."
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "user": "User",
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Sign in or create an account to continue."
+    },
+    "providers": {
+      "google": "Continue with Google",
+      "facebook": "Continue with Facebook",
+      "github": "Continue with GitHub"
+    },
+    "errors": {
+      "signInFailed": "Couldn't sign in. Please try again."
+    }
+  },
+  "home": {
+    "greeting": "Hi, {name}"
+  }
+}

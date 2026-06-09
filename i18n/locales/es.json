@@ -1,0 +1,29 @@
+{
+  "app": {
+    "title": "Work Hours",
+    "description": "Gestiona y registra tus horas de trabajo."
+  },
+  "nav": {
+    "home": "Inicio"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "user": "Usuario",
+    "login": {
+      "title": "Inicia sesión",
+      "subtitle": "Accede o crea tu cuenta para continuar."
+    },
+    "providers": {
+      "google": "Continuar con Google",
+      "facebook": "Continuar con Facebook",
+      "github": "Continuar con GitHub"
+    },
+    "errors": {
+      "signInFailed": "No se pudo iniciar sesión. Inténtalo de nuevo."
+    }
+  },
+  "home": {
+    "greeting": "Hola, {name}"
+  }
+}

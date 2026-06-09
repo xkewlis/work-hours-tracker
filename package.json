@@ -14,12 +14,17 @@
     "@iconify-json/lucide": "^1.2.111",
     "@iconify-json/simple-icons": "^1.2.84",
     "@nuxt/ui": "^4.8.1",
+    "@nuxtjs/i18n": "^10.4.0",
     "@types/node": "^25.9.2",
     "drizzle-orm": "^0.45.2",
+    "firebase": "^12.14.0",
+    "firebase-admin": "^13.10.0",
     "hono": "^4.12.23",
     "mysql2": "^3.22.4",
     "nuxt": "^4.4.6",
-    "tailwindcss": "^4.3.0"
+    "nuxt-vuefire": "^1.1.2",
+    "tailwindcss": "^4.3.0",
+    "vuefire": "^3.2.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.15.2",
@@ -27,6 +32,5 @@
     "eslint": "^10.4.1",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.3"
-  },
-  "packageManager": "pnpm@11.5.0"
+  }
 }
